@@ -1,0 +1,97 @@
+@font-face{
+   font-family: Bubble;
+    src: url(fonts/DoubleBubbleshadow.otf);
+}
+@font-face{
+    font-family: Monster;
+    src: url(fonts/MidnightValentine.ttf)
+}
+#name {
+    font-family: "Monster";
+    font-size: 60px;
+}
+title{
+    color:#232122;
+}
+body{
+    background-image: url(pictures/flower.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%
+    }
+#nav {
+    list-style-type: none;
+    margin: -8px;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+#nav li {
+    float: left;
+}
+
+#nav li a {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#nav li a:hover {
+    background-color: white;
+}
+#nav li a:active {
+    background-color: lightgreen;
+    color: black;
+}
+h1{
+    font-family:"Bubble", sans-serif; font-size: 75px;
+}
+#pro{
+    border:solid black;
+    width: 100px;
+    height: 100px;
+}
+hr{
+    color:black;
+}
+#nots{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color:#fcd1e7
+}
+
+#nots li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#nots li a:hover {
+    background-color: black;
+    color: #edb1d4;
+}
+#cla, #cla th, #cla td{
+    border: 1px double black;
+    border-collapse: collapse;
+    background-color: white;
+}
+#cen {
+    display: table;
+    margin: 0 auto;
+}
+#cla {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+#hob{
+    clear: both;
+}
+#me {
+    margin-left: 15px;
+    padding-top: 75px;
+}

@@ -1,0 +1,10 @@
+#me p{
+    border-style: solid;
+}
+h1{
+    font:monster;
+    src: url(fonts/monstershadow.ttf);
+}
+#name p{
+    font-size: 40px 
+}
