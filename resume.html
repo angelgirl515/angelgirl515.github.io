@@ -4,13 +4,20 @@
         <title>Resume</title>
         <link rel ="stylesheet" href="style.css" type="text/css">
         <style>
-#trial, #myImg {
+        #trial, #myImg, #shell, #sea, #pea, #time, #ref, #che {
+            margin: 10px;
+            text-align:center;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: white;
+        }
+#trial, #myImg, #shell, #sea, #pea, #time, #ref, #che {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
 }
 
-#trial:hover, #myImg:hover {opacity: 0.7;}
+#trial:hover, #myImg:hover, #shell:hover, #sea:hover, #pea:hover, #time:hover, #ref:hover, #che:hover {opacity: 0.7;}
 
 /* The Modal (background) */
 .modal {
@@ -101,10 +108,16 @@
         <h1>
             Resume
         </h1>
-        <p id="name">My Accomplishment Over the Years of High School</p>
+        <p id="name">My Accomplishments in Computer Graphics</p>
         <!-- Add clickable/expandable stuff -->
-        <p id="trial">Facebook</p>
-        <img id="myImg" src="pictures/flower.jpg" alt="Northern Lights, Norway" width="300" height="200">
+        
+        <img id="myImg" src="pictures/animals.jpg" alt="Burning Phoenix" width="250" height="200">
+        <img id="pea" src="pictures/peacefultrees.jpg" alt="Peaceful" width="200" height="200">
+        <img id="shell" src="pictures/akoya.jpg" alt="Akoya" width="300" height="250">
+        <img id="ref" src="pictures/reflection.jpg" alt="Reflection" width="200" height="200">
+        <img id="che" src="pictures/japan.jpg" alt="Cherry Blossoms" width="300" height="200">
+        <img id="time" src="pictures/time.jpg" alt="Precious Time" width="250" height="200">
+        <img id="sea" src="pictures/underthesea.jpg" alt="Under The Sea" width="200" height="200">
         
         <!-- The Modal -->
         <div id="myModal" class="modal">
@@ -120,15 +133,51 @@
         // Get the image and insert it inside the modal - use its "alt" text as a caption
         var p = document.getElementById('trial'); //changed myImg to trial
         var img = document.getElementById('myImg');
-        
+        var img2 = document.getElementById('shell');
+        var img3 = document.getElementById('che');
+        var img4 = document.getElementById('pea');
+        var img5 = document.getElementById('ref');
+        var img6 = document.getElementById('time');
+        var img7 = document.getElementById('sea');
+
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
-        p.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = "pictures/fb.png"; //changed this.src to this.href
-            captionText.innerHTML = "Facebook";
-        }
+        //p.onclick = function(){
+           // modal.style.display = "block";
+           // modalImg.src = "pictures/fb.png"; //changed this.src to this.href
+            //captionText.innerHTML = "Facebook";
+       // }
         img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src; //changed this.src to this.href
+            captionText.innerHTML = this.alt;
+        }
+        img2.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src; //changed this.src to this.href
+            captionText.innerHTML = this.alt;
+        }
+        img3.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src; //changed this.src to this.href
+            captionText.innerHTML = this.alt;
+        }
+        img4.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src; //changed this.src to this.href
+            captionText.innerHTML = this.alt;
+        }
+        img5.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src; //changed this.src to this.href
+            captionText.innerHTML = this.alt;
+        }
+        img6.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src; //changed this.src to this.href
+            captionText.innerHTML = this.alt;
+        }
+        img7.onclick = function(){
             modal.style.display = "block";
             modalImg.src = this.src; //changed this.src to this.href
             captionText.innerHTML = this.alt;
