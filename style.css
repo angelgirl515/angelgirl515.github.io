@@ -104,3 +104,12 @@ hr{
     padding: 100px;
     margin: 100px;
 }
+#game {
+    margin-top: 30px;
+    margin-left: 600px;
+    text-align: center;
+    border-bottom: dotted;
+    border-top: dotted;
+    border-right: dotted;
+    border-left: dotted;
+}
